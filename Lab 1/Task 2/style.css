@@ -1,0 +1,73 @@
+body {
+    display: block;
+
+    font-family: sans-serif;
+}
+
+.main {
+    height: 500px;
+    width: 300px;
+
+    margin: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+div>div {
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+input {
+    height: 25px;
+    width: 250px;
+
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 5px;
+    border-color: lime;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus {
+    outline: none;
+    border-style: solid;
+    border-color: blue;
+}
+
+p {
+    margin-block: 5px;
+}
+
+input:invalid + p::before {
+    content: "Поле обов'язково для заповнення";
+    color: red;
+}
+
+.button {
+    height: 35px;
+    width: 150px;
+    
+    margin-block: 5px;
+
+    color: white;
+    border-color: blue;
+    background-color: blue;
+}
