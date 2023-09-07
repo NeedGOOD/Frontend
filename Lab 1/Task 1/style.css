@@ -1,4 +1,4 @@
-input[type="checkbox"] {
+input[type="radio"] {
     display: none;
 }
 
@@ -20,6 +20,6 @@ p {
     transition: max-height 0.3s ease-in-out;
 }
 
-label>input[type="checkbox"]:checked + p{
+label>input[type="radio"]:checked + p{
     display: block;
 }
