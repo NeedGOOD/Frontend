@@ -11,6 +11,5 @@ p[2].style.cssText = "color: red; background-color: lightcoral; font-size: 12px;
 var td = document.querySelectorAll("td");
 
 for (let i = 0; i < td.length; ++i) {
-    
     if (i % 2 == 0) { td[i].classList.add("selected"); }
 }
