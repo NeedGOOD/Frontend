@@ -1,0 +1,16 @@
+table,
+td {
+    border: 1px solid black;
+}
+
+td {
+    padding: 30px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.selected {
+    background-color: yellow;
+}
