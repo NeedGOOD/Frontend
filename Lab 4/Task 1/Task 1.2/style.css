@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+.div-main {
+    width: 375px;
+}
+
+.div-daughterly {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    margin-block: 5px;
+}

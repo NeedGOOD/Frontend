@@ -1,0 +1,50 @@
+.main {
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+    height: auto;
+
+    background-color: blue;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px;
+    padding-left: 10px;
+
+    background-color: white;
+    border-radius: 2px;
+}
+
+.block:hover {
+    background-color: darkgrey;
+}
+
+.none {
+    display: none;
+}
+
+hr {
+    width: 675px;
+    height: 1.5px;
+
+    background-image: linear-gradient(to right, transparent, gray, transparent);
+    border: none;
+}
+
+#button::after {
+    content: "+";
+}
+
+#button.button::after {
+    content: "-";
+}
+
+div[onclick="zxc(this)"] {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
