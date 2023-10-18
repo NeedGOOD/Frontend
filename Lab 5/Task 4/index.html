@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>Загальний рахунок <span>0% (0 правильних відповідей з 10)</span></p>
+    <input type="button" value="Наступне завдання" onclick="nextTask()" id="next-task">
+    <br>
+    <label for="answer">Натисніть кнопку "Наступне завдання"</label>
+    <div class="none">
+        <input type="text" name="answer" id="answer"><input type="button" value="перевірити" onclick="checkingAsnwer()"
+            id="checking-answer">
+    </div>
+    <p id="conclusion"></p>
+    <script src="./main.js"></script>
+</body>
+
+</html>

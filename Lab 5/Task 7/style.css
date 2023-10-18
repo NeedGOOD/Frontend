@@ -1,0 +1,46 @@
+body {
+    display: flex;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+
+    width: 275px;
+    height: 30px;
+
+    margin: 10px;
+}
+
+label {
+    margin: 5px;
+}
+
+.block>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 75px;
+    height: 30px;
+
+    margin: 5px;
+
+    border-style: solid;
+    border-radius: 2px;
+    border-color: black;
+    border-width: 1px;
+}
+
+.bloc {
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+    width: 100px;
+    height: 100px;
+    margin-left: 75px;
+    background-color: aqua;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: blue;
+    border-width: 2px;
+}

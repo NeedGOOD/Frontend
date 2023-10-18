@@ -1,0 +1,58 @@
+.input {
+    height: 30px;
+    width: 300px;
+}
+
+input[type="text"],
+input[type="password"],
+.input {
+    margin: 5px;
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 1px;
+    border-width: 1.5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 1px;
+}
+
+.input:focus-within {
+    background-color: blue;
+}
+
+.textarea {
+    height: 48px;
+    width: 300px;
+}
+
+.textarea,
+textarea {
+    margin: 5px;
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 1px;
+    border-width: 1.5px;
+}
+
+textarea {
+    min-height: 31px;
+    min-width: 115px;
+    max-height: 31px;
+    max-width: 115px;
+}
+
+.textarea:focus-within {
+    background-color: blue;
+}
+
+textarea:focus {
+    outline: none;
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 1px;
+}

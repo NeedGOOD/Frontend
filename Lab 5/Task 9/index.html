@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <p>Список товарів:</p>
+        <table>
+            <tr>
+                <td>Брюки</td>
+                <td>
+                    <input type="button" value="Замовити" onclick="zxc('Брюки')">
+                </td>
+            </tr>
+            <tr>
+                <td>Сорочка</td>
+                <td>
+                    <input type="button" value="Замовити" onclick="zxc('Сорочка')">
+                </td>
+            </tr>
+            <tr>
+                <td>Шорти</td>
+                <td>
+                    <input type="button" value="Замовити" onclick="zxc('Шорти')">
+                </td>
+            </tr>
+            <tr>
+                <td>Туфлі</td>
+                <td>
+                    <input type="button" value="Замовити" onclick="zxc('Туфлі')">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <p>Кошик:</p>
+        <table>
+            <tr>
+                <td>Товар</td>
+                <td>Кількість</td>
+            </tr>
+            <tr>
+                <td class="ware">Брюки</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="ware">Сорочка</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="ware">Шорти</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="ware">Туфлі</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+    <!-- <script>
+        let step = [0, 0, 0, 0];
+        let have_or_not = false;
+
+        function createBasket() {
+            if (!have_or_not) {
+                have_or_not = true;
+
+                let div = document.createElement("div");
+
+                let p_basket = document.createElement("p");
+                p_basket.textContent = "Кошик:";
+
+                let table = document.createElement("table");
+
+                let tr_head = document.createElement("tr");
+
+                let td_ware = document.createElement("td");
+                td_ware.textContent = "Товар";
+
+                let td_amount = document.createElement("td");
+                td_amount.textContent = "Кількість";
+
+                tr_head.append(td_ware, td_amount);
+                table.append(tr_head);
+                div.append(p_basket, table);
+                document.body.appendChild(div);
+            }
+
+        }
+
+        function createObjects(ware, element, number) {
+            if (have_or_not) {
+                if (!table) {
+                    let table = document.querySelector("table");
+                }
+                for (let i = 0; i < ware.length; ++i) {
+                    if (element == "Брюки" && ware[i].textContent == "Брюки") {
+                        // step[i] += 1;
+                        let tr_item = document.createElement("tr");
+
+                        let td_item = document.createElement("td");
+                        ware[i].nextElementSibling.textContent = step[i];
+                    } else if (element == "Сорочка" && ware[i].textContent == "Сорочка") {
+                        // step[i] += 1;
+                        // ware[i].nextElementSibling.textContent = step[i];
+                    } else if (element == "Шорти" && ware[i].textContent == "Шорти") {
+                        // step[i] += 1;
+                        // ware[i].nextElementSibling.textContent = step[i];
+                    } else if (element == "Туфлі" && ware[i].textContent == "Туфлі") {
+                        // step[i] += 1;
+                        // ware[i].nextElementSibling.textContent = step[i];
+                    }
+                }
+
+                td_item.textContent = ware;
+
+                let td_item_amount = document.createElement("td");
+                td_item_amount.textContent = number[i].textContent; // Початкова кількість 1
+
+                tr_item.append(td_item, td_item_amount);
+                table.append(tr_item);
+            }
+        }
+
+        function zxc(element) {
+
+            let ware = document.getElementsByClassName("ware");
+
+            for (let i = 0; i < ware.length; ++i) {
+                if (element == "Брюки" && ware[i].textContent == "Брюки") {
+                    step[i] += 1;
+                    // ware[i].nextElementSibling.textContent = step[i];
+                } else if (element == "Сорочка" && ware[i].textContent == "Сорочка") {
+                    step[i] += 1;
+                    // ware[i].nextElementSibling.textContent = step[i];
+                } else if (element == "Шорти" && ware[i].textContent == "Шорти") {
+                    step[i] += 1;
+                    // ware[i].nextElementSibling.textContent = step[i];
+                } else if (element == "Туфлі" && ware[i].textContent == "Туфлі") {
+                    step[i] += 1;
+                    // ware[i].nextElementSibling.textContent = step[i];
+                }
+            }
+
+            createBasket(); // Спочатку створіть кошик, якщо не створений
+            createObjects(ware, element, step[i]);
+        }
+    </script>
+
+    <div>
+        <p>Список товарів:</p>
+        <table>
+            <tr>
+                <td>Брюки</td>
+                <td>
+                    <input type="button" value="Замовити" onclick="zxc('Брюки')">
+                </td>
+            </tr>
+            <tr>
+                <td>Сорочка</td>
+                <td>
+                    <input type="button" value="Замовити" onclick="zxc('Сорочка')">
+                </td>
+            </tr>
+            <tr>
+                <td>Шорти</td>
+                <td>
+                    <input type="button" value="Замовити" onclick="zxc('Шорти')">
+                </td>
+            </tr>
+            <tr>
+                <td>Туфлі</td>
+                <td>
+                    <input type="button" value="Замовити" onclick="zxc('Туфлі')">
+                </td>
+            </tr>
+        </table>
+    </div> -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

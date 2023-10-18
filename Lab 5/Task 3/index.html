@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="text-result">Загальний рахунок <span class="result">0% (0 правильних відповідей з 10)</span></div>
+
+    <input type="button" value="наступне завдання" onclick="nextQuestions()" class="next-questions">
+
+    <div class="task" id="task">Натисніть кнопку "Наступне завдання"</div>
+
+    <div class="none">
+        <div>
+            <input type="radio" name="choice" id="firstChoice" value="1">
+            <label for="firstChoice"></label>
+        </div>
+
+        <div>
+            <input type="radio" name="choice" id="secondChoice" value="2">
+            <label for="secondChoice"></label>
+        </div>
+
+        <div>
+            <input type="radio" name="choice" id="thirdChoice" value="3">
+            <label for="thirdChoice"></label>
+        </div>
+
+        <div>
+            <input type="radio" name="choice" id="fourthChoice" value="4">
+            <label for="fourthChoice"></label>
+        </div>
+    </div>
+
+    <div id="answer"></div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

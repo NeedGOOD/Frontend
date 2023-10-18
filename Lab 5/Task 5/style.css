@@ -1,0 +1,24 @@
+table,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+}
+
+.colors {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.gray {
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
