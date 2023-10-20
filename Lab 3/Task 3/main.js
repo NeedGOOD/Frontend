@@ -168,23 +168,3 @@ for (let i = 0; i < side_diagonals.length; ++i) {
     for (let j = 0; j < side_diagonals[i].length; ++j) { sum += side_diagonals[i][j]; }
     sum_diagonals.push(sum);
 }
-
-// let sumDiagonal = [];
-// let maximumSum = true;
-
-// while (maximumSum) {
-//     let sum = 0;
-//     for (let i = 0; i < rows; ++i) {
-//         for (let j = 0; j < columns; ++j) {
-//             if (i + 1 == j) {
-//                 sum += array[i][j];
-//             }
-//         }
-//     }
-//     sumDiagonal.push(sum);
-//     maximumSum = false;
-// }
-
-// for (let i = 0; i < sumDiagonal.length; ++i) {
-//     console.log("sum diagonal[", i, "] =", sumDiagonal[i]);
-// }

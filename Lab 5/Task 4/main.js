@@ -12,7 +12,6 @@ function seeDisplay(element) {
     if (getComputedStyle(element).display == "none") { element.style.display = "block"; }
 }
 
-
 function nextTask() {
     let see_block = document.querySelector(".none");
 
